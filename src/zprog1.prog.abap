@@ -14,8 +14,14 @@ SELECT  matnr,
 
 IF sy-subrc = 0.
 *cl_demo_output=>display( lit_mara ).
-read table lit_mara into data(lwa_mara) with key matnr = 'LINER'.
+*read table lit_mara into data(lwa_mara) with key matnr = 'LINER'.
+*IF sy-subrc = 0.
+*write : lwa_mara.
+*endif.
+
+read table lit_mara into data(lwa_mara) with key matnr = 'R-COVER'.
 IF sy-subrc = 0.
 write : lwa_mara.
 endif.
+
 ENDIF.
