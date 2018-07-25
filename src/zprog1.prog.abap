@@ -18,7 +18,7 @@ read table lit_mara into data(lwa_mara) with key matnr = 'LINER'.
 IF sy-subrc = 0.
 write : lwa_mara.
 endif.
-
+fusufx
 *read table lit_mara into data(lwa_mara) with key matnr = 'R-COVER'.
 *IF sy-subrc = 0.
 *write : lwa_mara.
