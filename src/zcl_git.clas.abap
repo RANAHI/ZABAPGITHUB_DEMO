@@ -34,9 +34,6 @@ public section.
   data:
     it_afko TYPE TABLE OF t_afko .
 
-  methods GET_ORDER
-    exporting
-      !IT_AUFK like TT_AUFK1 .
   methods GET_ORDER_HEADER
     importing
       !IT_AUFK like TT_AUFK1
@@ -68,42 +65,6 @@ CLASS ZCL_GIT IMPLEMENTATION.
 
     cl_demo_output=>display( it_afko ).
 
-  ENDMETHOD.
-
-
-  METHOD get_order.
-
-    SELECT aufnr,
-    auart,
-    autyp,
-    refnr,
-    ernam,
-    erdat
-   FROM aufk INTO TABLE @it_aufk UP TO 10 ROWS.
-
-    IF sy-subrc = 0.
-
-      DATA : o_git TYPE REF TO zcl_git.
-      CREATE OBJECT o_git.
-
-      CALL METHOD o_git->get_order_header
-        EXPORTING
-          it_aufk = it_aufk
-        IMPORTING
-          it_afko = it_afko.
-
-      CALL METHOD o_git->display_order
-        IMPORTING
-          it_aufk = it_aufk.
-
-      CALL METHOD o_git->display_order_master
-        CHANGING
-          it_afko = it_afko.
-
-
-
-
-    ENDIF.
   ENDMETHOD.
 
 
