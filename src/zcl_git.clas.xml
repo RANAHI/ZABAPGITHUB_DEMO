@@ -1,0 +1,45 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<abapGit version="v1.0.0" serializer="LCL_OBJECT_CLAS" serializer_version="v1.0.0">
+ <asx:abap xmlns:asx="http://www.sap.com/abapxml" version="1.0">
+  <asx:values>
+   <VSEOCLASS>
+    <CLSNAME>ZCL_GIT</CLSNAME>
+    <VERSION>1</VERSION>
+    <LANGU>E</LANGU>
+    <DESCRIPT>Abap git demo class</DESCRIPT>
+    <EXPOSURE>2</EXPOSURE>
+    <STATE>1</STATE>
+    <CLSFINAL>X</CLSFINAL>
+    <CLSCCINCL>X</CLSCCINCL>
+    <FIXPT>X</FIXPT>
+    <UNICODE>X</UNICODE>
+   </VSEOCLASS>
+   <DESCRIPTIONS>
+    <SEOCOMPOTX>
+     <CLSNAME>ZCL_GIT</CLSNAME>
+     <CMPNAME>DISPLAY_ORDER</CMPNAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>Display order master data</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>ZCL_GIT</CLSNAME>
+     <CMPNAME>DISPLAY_ORDER_MASTER</CMPNAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>Display order master data</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>ZCL_GIT</CLSNAME>
+     <CMPNAME>GET_ORDER</CMPNAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>Get Order master data</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>ZCL_GIT</CLSNAME>
+     <CMPNAME>GET_ORDER_HEADER</CMPNAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>Get Order Header Data PP Orders</DESCRIPT>
+    </SEOCOMPOTX>
+   </DESCRIPTIONS>
+  </asx:values>
+ </asx:abap>
+</abapGit>
