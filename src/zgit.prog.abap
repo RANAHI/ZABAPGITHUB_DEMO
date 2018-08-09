@@ -5,6 +5,8 @@
 *&---------------------------------------------------------------------*
 REPORT ZGIT.
 
+INCLUDE zdeclaration.
+
 SELECT  matnr,
         ersda,
         ernam,
