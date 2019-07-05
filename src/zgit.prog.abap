@@ -3,7 +3,7 @@
 *&---------------------------------------------------------------------*
 *&
 *&---------------------------------------------------------------------*
-REPORT ZGIT.
+REPORT zgit.
 
 SELECT  matnr,
         ersda,
@@ -13,5 +13,7 @@ SELECT  matnr,
         vpsta FROM mara INTO TABLE @DATA(lit_mara) UP TO 5 ROWS.
 
 IF sy-subrc = 0.
-  cl_demo_output=>display( lit_mara ).
+  LOOP AT lit_mara ASSIGNING FIELD-SYMBOL(<lfs_mara>).
+    WRITE : <lfs_mara>.
+  ENDLOOP.
 ENDIF.
